@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF6EC">
+
+
+
+        <Button
+            android:id="@+id/btnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ECE4A3"
+            android:layout_toEndOf="@id/btnGoBack"
+            android:text="Back"
+            android:textColor="@color/black"
+            app:cornerRadius="31dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth=".1dp" />
+
+
+        <Button
+            android:id="@+id/btnForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="31dp"
+            android:backgroundTint="#E7E8E8"
+            android:layout_toEndOf="@+id/btnGoBack"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth=".1dp"
+            android:text="Next" />
+
+        <EditText
+            android:id="@+id/edturl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="write url"
+            android:textStyle="normal"
+            android:paddingLeft="15dp"
+            android:layout_toEndOf="@+id/btnForward" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:cornerRadius="9dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1.1dp"
+            android:text="Go" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="654dp" />
+
+    <TextView
+        android:id="@+id/compyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Copyright © 2023 B.M."
+        android:textAlignment="center" />
+
+
+</LinearLayout>

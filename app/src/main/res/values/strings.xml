@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SearchEngin</string>
+    <string name="back">48</string>
+    <string name="next" />
+    <string name="go" />
+    <string name="forward" />
+</resources>
